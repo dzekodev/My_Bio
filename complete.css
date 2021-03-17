@@ -1,0 +1,208 @@
+.WorkPage{
+    width: 1600px;
+    margin: 100px auto;
+    box-shadow: 10px 10px 10px 10px grey;
+    background-color: #ffffff;
+    position: relative;
+}
+.content{
+    width: 85%;
+    height: 1550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.content nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+@keyframes profile-Anime{
+    0%{transform: translateX(0);}
+    25%{transform: translateX(-25%);}
+    50%{transform: translateY(-50%);}
+    75%{transform: translateX(-75%);}
+}
+.WorkPage div nav img{
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+    box-shadow: 2px 2px 8px 2px grey;
+    animation-name: profile-Anime;
+    animation-duration: 1.5s;
+}
+.WorkPage div nav span{
+    padding-top:20px;
+    position: relative;
+    right: 210px;
+}
+.WorkPage div span b{
+    position: relative;
+    top: 5px;
+    font-size: 19px;
+    font-family: 'Hachi Maru Pop', cursive;
+    color: #070624;
+}
+.WorkPage div span p{
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    color:  rgba(0, 0, 0, 0.452);
+}
+.WorkPage ul{
+    display: flex;
+    position: relative;
+    right: 60px;
+}
+.WorkPage ul li{
+    margin-left: 30px;
+    margin-right: 20px;
+    list-style: none;
+}
+.WorkPage ul button{
+    width: 180px;
+    font-size: 20px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #070624;
+    height: 40px;
+    border: solid 2px #070624;
+    font-family: 'Crete Round', serif;
+    margin-left: 20px;
+    position: relative;
+    bottom: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.WorkPage ul button:hover{
+    background-color: #070624;
+    color:#ffffff;
+}
+.WorkPage ul li a{
+    font-family: 'Crete Round', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #070624;
+}
+
+
+
+
+
+
+@keyframes leftAnim{
+    0%{transform: translateX(-10px);}
+    25%{transform: translateX(-20px);}
+    50%{transform: translateX(-30px);}
+    75%{transform: translateX(-40);}
+    100%{transform: translateX(-50);}
+}
+@keyframes RightAnim{
+    0%{transform: translateX(10px);}
+    25%{transform: translateX(20px);}
+    50%{transform: translateX(30px);}
+    75%{transform: translateX(40);}
+    100%{transform: translateX(50);}
+}
+
+.AboutPage h1{
+    font-family: 'Potta One', cursive;
+    font-weight: 100;
+    color: #090555;
+}
+#infosAboutMe{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 25px;
+    color: rgb(122, 9, 9);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#infosAboutMe li ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#infosAboutMe>li:nth-child(2),#infosAboutMe>li:nth-child(4){
+    animation-name: leftAnim;
+    animation-duration: 2s;
+}
+#infosAboutMe>li:nth-child(1),#infosAboutMe>li:nth-child(3){
+    animation-name: RightAnim;
+    animation-duration: 2s;
+}
+#infosAboutMe>li{
+    box-shadow: 2px 2px 10px 2px rgba(128, 128, 128, 0.349);
+    margin-top: 10px;
+    border-radius: 20px;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#skills{
+    height: 260px;
+    width: 500px;
+}
+#software{
+    height: 160px;
+}
+#software ul span{
+    display: flex;
+    flex-direction: row;
+}
+.AboutPage ul li ul li{
+    font-size: 20px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.349);
+    padding-top: 5px;
+    color: rgb(6, 32, 102);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    padding-bottom: 5px;
+    list-style-type: square;
+}
+.AboutPage ul li ul{
+    padding-left: 70px;
+}
+.AboutPage ul li:nth-child(3) ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#my_icons{
+    color: #790707;
+    font-size: 30px;
+}
+
+.extra{
+    background-color: #ee8787;
+    position: absolute;
+    right: 0;
+    top: 200px;
+    width: 160px;
+    height: 300px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.extra img{
+    width: 100px;
+    height: 90px;
+    border-radius: 60px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.extra .name{
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-family: 'Roboto Slab', serif;
+}
+.extra a{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 6px;
+    font-size: 16px;
+}
